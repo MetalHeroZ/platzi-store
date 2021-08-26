@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import NotFound from '../containers/NotFound';
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/platzi-store">
     <Layout>
       <Switch>
         <Route exact path="/" component={Home} />
