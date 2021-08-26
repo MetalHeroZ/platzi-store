@@ -10,7 +10,7 @@ describe('Fetch ENDPOINT', () => {
 
     getData('https://google.com.ar')
       .then((response) => {
-        expect(response).toEqual('12345');
+        expect(response.data).toEqual('12345');
       });
 
     expect(fetch.mock.calls[0][0]).toEqual('https://google.com.ar');
